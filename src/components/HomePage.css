@@ -1,0 +1,75 @@
+/* Set the overall gradient background */
+.home-container {
+  text-align: center;
+  padding-top: 50px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d5ecff 0%, #d4c1fc 100%);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the title */
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+/* Styling for the subtitle */
+.tagline {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* Create a grid layout with four buttons */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Styling for each grid item (button) */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button colors */
+.chat {
+  background-color: #fbd6ff;
+}
+
+.translate {
+  background-color: #aee5ff;
+}
+
+.faqs {
+  background-color: #e1c7ff;
+}
+
+.about {
+  background-color: #fbc7d4;
+}
+
+/* Add hover effect */
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query for mobile */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
